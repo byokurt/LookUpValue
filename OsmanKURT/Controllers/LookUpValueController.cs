@@ -18,7 +18,7 @@ namespace OsmanKURT.Controllers
             _collection = collection;
         }
 
-        //[Roles(Constant.Admin)]
+        [Roles(Constant.Admin)]
         [HttpPost]
         [Route("GetValue")]
         public IActionResult GetValue(GetValueRequest request)

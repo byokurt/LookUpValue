@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace OsmanKURT.UnitTest
 {
     [TestFixture]
-    [Category("UnitTests.LookUoValueEngine")]
+    [Category("UnitTests.LookUpValueEngine")]
     public class LookUpTest
     {
 

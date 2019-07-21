@@ -44,8 +44,7 @@ namespace OsmanKURT.Business
         {
             new GetValueControl().Validate(request);
 
-            var response = _cache.ExecuteCached(string.Format("{0}-{1}", StringHelper.ClearTurkishCharacter(request.Name), StringHelper.ClearTurkishCharacter(request.ApplicationName)), request.RefreshTime, () => _collection.GetService<ILookUpValueRepository>().GetValue(request));
-            return response;
+            return _cache.ExecuteCached(string.Format("{0}-{1}", StringHelper.ClearTurkishCharacter(request.Name), StringHelper.ClearTurkishCharacter(request.ApplicationName)), request.RefreshTime, () => _collection.GetService<ILookUpValueRepository>().GetValue(request));
         }
 
         /// <summary>

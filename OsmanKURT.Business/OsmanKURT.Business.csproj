@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0-preview3-35497" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OsmanKURT.Business.Contracts\OsmanKURT.Business.Contracts.csproj" />
+    <ProjectReference Include="..\OsmanKURT.Cache\OsmanKURT.Cache.csproj" />
+    <ProjectReference Include="..\OsmanKURT.ClientEntites\OsmanKURT.ClientEntites.csproj" />
+    <ProjectReference Include="..\OsmanKURT.Common\OsmanKURT.Common.csproj" />
+    <ProjectReference Include="..\OsmanKURT.Data.Contracts\OsmanKURT.Data.Contracts.csproj" />
+    <ProjectReference Include="..\OsmanKURT.Log\OsmanKURT.Log.csproj" />
+    <ProjectReference Include="..\OsmanKURT.Mail\OsmanKURT.Mail.csproj" />
+    <ProjectReference Include="..\OsmanKURT.Token\OsmanKURT.Token.csproj" />
+  </ItemGroup>
+
+</Project>

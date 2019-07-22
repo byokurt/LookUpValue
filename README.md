@@ -15,6 +15,6 @@ Uygulama için bir “Log Manager” yazıldı ve NLog kullanıldı. Log datalar
 Role yapısı ve authentication için “JWT” kullanıldı.<br/><br/>
 Projeye “Mail Manager” yazıldı ve SMTP Provider entegre edildi. Kurgulanan yapıda isternirse farklı provider eklenebilir,  geliştirme bu şekilde yapıldı.<br/><br/>
 
-Osman KURT
+Osman KURT <br/>
 info@osmankurt.net
 

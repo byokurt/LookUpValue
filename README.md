@@ -1,10 +1,20 @@
 # LookUpValue
-PostgreSQL &amp; Redis üzerinde dinamik data tutulması ve bu datanın API olarak dönülmesi
+Dinamik konfigure verilerin saklanması;
+Kullanılan Teknolojiler;
+•	Net Core <br/>
+•	Redis Cache <br/>
+•	PostgreSQL <br/>
+•	Mail Manager (SMTP Provider) <br/>
+•	Log Manager (NLog) <br/>
+•	Exception Middleware <br/>
+•	JWT Token <br/><br/>
+Uygulama geliştirme platform olarak Net Core seçildi. SOLID prensiplerine bağlı kalarak geliştirilen uygulamada, Net Core tercih sebebi windows platformuna bağlı kalmadan uygulamları host edebilmek ve ölçeklenebilir uygulamlar geliştirmek için seçilmiştir.<br/>
+Data, PostgreSQL üzerinde saklandı. NoSQL bir çözüm olmasa da sağladığı transaction sayıları hatrı sayılır ve open source bir uygulama olması tercih sebebi.<br/>
+Cache uygulaması olarak bir “Cache Manager” yazıldı ve “Redis” kullanıldı. Başarılı bir şekilde görevini yerine getirmesi döküman sayısının fazla olması ve hali hazırda kullanan referans firmalar Redis seçiminde önemli rol oynadı.<br/>
+Uygulama için bir “Log Manager” yazıldı ve NLog kullanıldı. Log dataları PostgreSQL üzerinde saklandı. Yazılan bir “Exception Middleware” ile hata logları otomatik olarak yapıldı. Diğer info vb log dataları yazılan “LogManager” ile geliştirici insiyatifine bırakıldı.<br/>
+Role yapısı ve authentication için “JWT” kullanıldı.<br/>
+Projeye “Mail Manager” yazıldı ve SMTP Provider entegre edildi. Kurgulanan yapıda isternirse farklı provider eklenebilir,  geliştirme bu şekilde yapıldı.<br/><br/>
 
-Tech Stack <br/><br/>
-Redis Cache <br/>
-PostgreSQL <br/>
-Mail Manager (SMTP Provider) <br/>
-Log Manager (NLog) <br/>
-Exception Middleware <br/>
-JWT Token
+Osman KURT
+info@osmankurt.net
+

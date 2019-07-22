@@ -1,6 +1,6 @@
 # LookUpValue
-Dinamik konfigure verilerin saklanması;<br/>
-Kullanılan Teknolojiler;<br/>
+Dinamik konfigure verilerin saklanması;<br/><br/>
+Kullanılan Teknolojiler;<br/><br/>
 •	Net Core <br/>
 •	Redis Cache <br/>
 •	PostgreSQL <br/>

@@ -85,21 +85,5 @@ namespace OsmanKURT.Business
 
             return true;
         }
-
-        /// <summary>
-        /// UnitTest için yazılmış method
-        /// </summary>
-        /// <param name="date"></param>
-        /// <param name="culture"></param>
-        /// <returns></returns>
-        public string ToPrettyDate(DateTime date, CultureInfo culture)
-        {
-            if (culture == null)
-            {
-                throw new ArgumentNullException(nameof(culture));
-            }
-
-            return date.ToString("dd MMMMM yyyy", culture);
-        }
     }
 }

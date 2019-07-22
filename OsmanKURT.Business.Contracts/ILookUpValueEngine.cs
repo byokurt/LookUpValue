@@ -9,6 +9,5 @@ namespace OsmanKURT.Business.Contracts
     {
         string GetValue(GetValueRequest request);
         bool SetValue(SetValueRequest request);
-        string ToPrettyDate(DateTime date, CultureInfo culture);
     }
 }

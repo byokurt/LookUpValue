@@ -1,6 +1,6 @@
 # LookUpValue
-Dinamik konfigure verilerin saklanması;
-Kullanılan Teknolojiler;
+Dinamik konfigure verilerin saklanması;<br/>
+Kullanılan Teknolojiler;<br/>
 •	Net Core <br/>
 •	Redis Cache <br/>
 •	PostgreSQL <br/>
@@ -8,7 +8,7 @@ Kullanılan Teknolojiler;
 •	Log Manager (NLog) <br/>
 •	Exception Middleware <br/>
 •	JWT Token <br/><br/>
-Uygulama geliştirme platform olarak Net Core seçildi. SOLID prensiplerine bağlı kalarak geliştirilen uygulamada, Net Core tercih sebebi windows platformuna bağlı kalmadan uygulamları host edebilmek ve ölçeklenebilir uygulamlar geliştirmek için seçilmiştir.<br/>
+Uygulama geliştirme platform olarak Net Core seçildi. SOLID prensiplerine bağlı kalarak geliştirilen uygulamada, Net Core tercih sebebi windows platformuna bağlı kalmadan uygulamları host edebilmek ve ölçeklenebilir uygulamlar geliştirmek için seçilmiştir.<br/><br/>
 Data, PostgreSQL üzerinde saklandı. NoSQL bir çözüm olmasa da sağladığı transaction sayıları hatrı sayılır ve open source bir uygulama olması tercih sebebi.<br/><br/>
 Cache uygulaması olarak bir “Cache Manager” yazıldı ve “Redis” kullanıldı. Başarılı bir şekilde görevini yerine getirmesi döküman sayısının fazla olması ve hali hazırda kullanan referans firmalar Redis seçiminde önemli rol oynadı.<br/><br/>
 Uygulama için bir “Log Manager” yazıldı ve NLog kullanıldı. Log dataları PostgreSQL üzerinde saklandı. Yazılan bir “Exception Middleware” ile hata logları otomatik olarak yapıldı. Diğer info vb log dataları yazılan “LogManager” ile geliştirici insiyatifine bırakıldı.<br/><br/>
